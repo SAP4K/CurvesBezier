@@ -1,3 +1,19 @@
 ﻿  Source.cpp
-C:\Users\ADMIN\source\repos\Window\Window\Source.cpp(37,14): warning C4101: 'rc': unreferenced local variable
+C:\Users\ADMIN\source\repos\Window\Window\Source.cpp(39,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\ADMIN\source\repos\Window\Window\Source.cpp(40,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\ADMIN\source\repos\Window\Window\Source.cpp(56,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\ADMIN\source\repos\Window\Window\Source.cpp(57,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\ADMIN\source\repos\Window\Window\Source.cpp(65,28): warning C4244: '-=': conversion from 'float' to 'LONG', possible loss of data
+C:\Users\ADMIN\source\repos\Window\Window\Source.cpp(65,56): warning C4244: '-=': conversion from 'float' to 'LONG', possible loss of data
+C:\Users\ADMIN\source\repos\Window\Window\Source.cpp(66,20): warning C4244: 'initializing': conversion from 'LONG' to 'float', possible loss of data
+C:\Users\ADMIN\source\repos\Window\Window\Source.cpp(67,49): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+C:\Users\ADMIN\source\repos\Window\Window\Source.cpp(68,38): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+C:\Users\ADMIN\source\repos\Window\Window\Source.cpp(69,28): warning C4244: '+=': conversion from 'float' to 'LONG', possible loss of data
+C:\Users\ADMIN\source\repos\Window\Window\Source.cpp(69,56): warning C4244: '+=': conversion from 'float' to 'LONG', possible loss of data
+C:\Users\ADMIN\source\repos\Window\Window\Source.cpp(81,38): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\ADMIN\source\repos\Window\Window\Source.cpp(82,129): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\ADMIN\source\repos\Window\Window\Source.cpp(83,147): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\ADMIN\source\repos\Window\Window\Source.cpp(84,26): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\ADMIN\source\repos\Window\Window\Source.cpp(84,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\ADMIN\source\repos\Window\Window\Source.cpp(97,14): warning C4101: 'rc': unreferenced local variable
   Window.vcxproj -> C:\Users\ADMIN\source\repos\Window\x64\Debug\Window.exe
