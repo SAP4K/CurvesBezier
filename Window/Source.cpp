@@ -97,7 +97,8 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
         RECT rc;
         HDC hdc = BeginPaint(hwnd, &pn);
         ClearSurface(hwnd);
-        PolyBezier(hdc, points, 4);
+        Rotation(hwnd);
+        FormulBezier(hwnd);
         EndPaint(hwnd, &pn);
     }break;
     case WM_KEYDOWN: {
@@ -107,24 +108,28 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
             std::cout << "UP\n";
             ClearSurface(hwnd);
             DrawNewPosition(hwnd, 0, -10);
+            FormulBezier(hwnd);
             Rotation(hwnd);
         }break;
         case VK_DOWN: {
             std::cout << "DOWN\n";
             ClearSurface(hwnd);
             DrawNewPosition(hwnd, 0, 10);
+            FormulBezier(hwnd);
             Rotation(hwnd);
         }break;
         case VK_LEFT: {
             std::cout << "Left\n";
             ClearSurface(hwnd);
             DrawNewPosition(hwnd, -10, 0);
+            FormulBezier(hwnd);
             Rotation(hwnd);
         }break;
         case VK_RIGHT: {
             std::cout << "Right\n";
             ClearSurface(hwnd);
             DrawNewPosition(hwnd, 10, 0);
+            FormulBezier(hwnd);
             Rotation(hwnd);
         }break;
             //incrementi punctul
@@ -134,6 +139,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
            
             ClearSurface(hwnd);
             FormulBezier(hwnd);
+            Rotation(hwnd);
         }break;
             //Decrementezi punctul
         case 'A': {
@@ -146,34 +152,40 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
             PositonFormuls[qq].x -= 10;
             ClearSurface(hwnd);
             FormulBezier(hwnd);
+            Rotation(hwnd);
         }break;
             //incrementzi coordonata x
         case 'E': {
             PositonFormuls[qq].x += 10;
             ClearSurface(hwnd);
             FormulBezier(hwnd);
+            Rotation(hwnd);
         }break;
            //Decrementezi coordonata y
         case 'Z': {
             PositonFormuls[qq].y -= 10;
             ClearSurface(hwnd);
             FormulBezier(hwnd);
+            Rotation(hwnd);
         }break;
             //incrementzi coordonata y
         case 'X': {
-   
+            PositonFormuls[qq].y += 10;
             ClearSurface(hwnd);
             FormulBezier(hwnd);
+            Rotation(hwnd);
         }break;
         case 'F': {
             Dagre -= 5;
             ClearSurface(hwnd);
             Rotation(hwnd);
+            FormulBezier(hwnd);
         }break;
         case 'G': {
             Dagre += 5;
             ClearSurface(hwnd);
             Rotation(hwnd);
+            FormulBezier(hwnd);
         }break;
         }
     }break;
